@@ -6,7 +6,25 @@
         background-color: #2c8999;
         color: #f3f3f3;
     }
+    .iframe  {
+position: relative;
+overflow: hidden;
+width: 80%;
+padding-top: 45%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.responsive-iframe {
+border:none;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+width: 100%;
+height: 100%;
+}
 </style>
+<link rel="shortcut icon" href="https://lisztomaniac1886.github.io/TGD/Favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:title" content="Hot and Bothered (6x06)" />
 <meta property="og:image" content="https://static.wikia.nocookie.net/the-good-doctor/images/0/09/606Promo_%2814%29.jpg" />
 <meta property="og:descriprtion" content="Hot and Bothered is the sixth episode of Season 6 of The Good Doctor. It is the hundredth episode overall, and will air on November 21, 2022." />
@@ -17,23 +35,34 @@
     <h2>"Hot and Bothered"</h2>
     <h3>Season 6, Episode 6</h3>
     <hr>
-    <h2>Server 1</h2>
-    <iframe width="640" height="320" src="https://ok.ru/videoembed/4039416547902" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+    <h2>Server 1 (OK)</h2>
+    <div class="iframe">
+    <iframe class="responsive-iframe" src="https://ok.ru/videoembed/4039416547902" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+    </div>
 <br/>
 <br/>
 <hr>
-<h2>Server 2</h2>
-<iframe src="https://vk.com/video_ext.php?oid=310494831&id=456239020&hash=7d9dcf1d6d1ddb9c" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<h2>Server 2 (VK)</h2>
+<div class="iframe">
+<iframe src="https://vk.com/video_ext.php?oid=310494831&id=456239020&hash=7d9dcf1d6d1ddb9c" class="responsive-iframe" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
 <br/>
 <br/>
 <hr>
-<h2> Server 3</h2>
-<iframe width="640" height="360" src="https://embed.myvideo.ge/flv_player/embed.php?video_id=4149147" frameborder="0" allowfullscreen="true"></iframe>
+<h2>Server 3 (Drive)</h2>
+<div class="iframe">
+<iframe class="responsive-iframe" src="https://drive.google.com/file/d/1ees9vfaRMEypwRhnL8gJ-HiWQ3Fk-zKc/preview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br>
+<br>
+<hr>
+<h2> Server 4 (MyVideo)</h2>
+<div class="iframe">
+<iframe class="responsive-iframe"  src="https://embed.myvideo.ge/flv_player/embed.php?video_id=4149147" frameborder="0" allowfullscreen="true"></iframe>
+</div>
 <br/>
 <br/>
 <br/>
-
-
 </center>
 </body>
 </html>
